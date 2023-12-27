@@ -1,5 +1,4 @@
-
-  const products = [
+ const products = [
     { name: "The American Burger", price: 6990 },
     { name: "The Fixed Burger", price: 6990 },
     { name: "The Code Burger", price: 7990 },
@@ -14,7 +13,7 @@
     "Bienvenido a The Code Bar, ¿Desea continuar? si/no"
   );
   while (selection !== "si" && selection !== "no") {
-    alert("Por favor ingresar Si o No");
+    alert("Por favor ingrese Si o No");
     selection = prompt("¿Desea continuar?");
   }
   
@@ -29,7 +28,7 @@
   }
   
   while (selection !== "no") {
-    let product = prompt("Realiza tu pedido");
+    let product = prompt("Realiza tu pedido").toLocaleLowerCase;
     let price = 0;
     if (
       product === "The American Burger" ||
@@ -64,4 +63,20 @@
     } else {
       alert("Opción inválida");
     }
+  
+    selection = prompt("¿Quiere agregar más productos?");
+  
+    if (selection === "no") {
+      alert("Gracias por visitarnos");
+      shoppingCart.forEach((finalShoppingCart) => {
+        console.log(
+          `Producto: ${finalShoppingCart.product}, Cantidad: ${finalShoppingCart.quantity}, 
+          Total: ${finalShoppingCart.quantity * finalShoppingCart.price}`
+        )
+      });
+      break;
+    }
   }
+  
+  const amountToPay = shoppingCart.reduce((acc, el) => acc + el.price* el.quantity, 0)
+  console.log (`Total a pagar: ${amountToPay}`) 
