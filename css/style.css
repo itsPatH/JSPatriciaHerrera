@@ -1,0 +1,86 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    margin: 0;
+    max-width: 1200px;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto Mono", monospace;
+    padding: 0;
+  }
+  .icon-cart {
+    width: 40px;
+    height: 40px;
+  }
+  img {
+    max-width: 100%;
+  }
+  header {
+    display: flex;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    gap: 20px;
+  }
+ .item {
+    border-radius: 10px;
+
+ }  
+ .item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+ }
+ .info-product{
+    padding: 15px 30px;
+ }
+ .item img {
+    width: 300px;
+    height: 350px;
+    object-fit:contain;
+    
+ }
+  
+  main {
+    background-color: azure;
+  }
+  
+  p {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: larger;
+    text-align: center;
+  }
+  
+  h2,
+  h3 {
+    text-align: center;
+    text-justify: distribute;
+    font-family: "Roboto Mono", monospace;
+    padding: 10px 10px 10px 10px;
+  }
+  .mug {
+    color: white;
+  }
