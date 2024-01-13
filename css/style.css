@@ -1,86 +1,201 @@
 *::after,
 *::before,
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-  }
-  
-  body {
-    margin: 0;
+}
+
+body{
+    margin: 0 auto;
     max-width: 1200px;
     font-family: "Montserrat", sans-serif;
     font-family: "Roboto Mono", monospace;
     padding: 0;
-  }
-  .icon-cart {
+}
+
+.icon-cart{
     width: 40px;
     height: 40px;
-  }
-  img {
+
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
     max-width: 100%;
-  }
-  header {
+}
+
+
+header{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     background-color: black;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    justify-content: space-between;
-  }
+}
 
+.container-icon{
+    position: relative;
+}
 
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#contador-productos{
+    font-size: 12px;
+}
 
-
-
-
-
-  .menu-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding: 10px;
-    gap: 20px;
-  }
- .item {
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 400px;
+    z-index: 1;
+    background-color: black;
+    box-shadow: 0 10px 10px grey;
     border-radius: 10px;
-
- }  
- .item:hover{
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
- }
- .info-product{
-    padding: 15px 30px;
- }
- .item img {
-    width: 300px;
-    height: 350px;
-    object-fit:contain;
     
- }
-  
-  main {
-    background-color: azure;
-  }
-  
-  p {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    font-size: larger;
+}
+
+.cart-product{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #fff solid 1px;
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
     text-align: center;
-  }
-  
-  h2,
-  h3 {
-    text-align: center;
-    text-justify: distribute;
-    font-family: "Roboto Mono", monospace;
-    padding: 10px 10px 10px 10px;
-  }
-  .mug {
+}
+
+
+.hidden{
+    display: none;
+}
+
+.mug {
     color: white;
-  }
+}
