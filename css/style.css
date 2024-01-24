@@ -10,7 +10,7 @@
 
 body{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 100%;
     font-family: "Montserrat", sans-serif;
     font-family: "Roboto Mono", monospace;
     padding: 0;
