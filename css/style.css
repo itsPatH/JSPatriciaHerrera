@@ -216,10 +216,12 @@ header{
     flex-direction: column;
     gap: 10px;
 }
+
 .info-product h2 {
     text-align: center;
     font-weight:bolder;
 }
+
 .info-product h3 {
     text-align:justify ;
     font-weight: 100;
@@ -244,10 +246,10 @@ header{
     text-align: center;
 }
 
-
 .hidden{
     display: none;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -256,9 +258,11 @@ header{
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
 p {
     text-align: center;
 }
+
 .iframe-container {
     background-color: #f1f1f1;
     margin: 10px;
@@ -267,6 +271,7 @@ p {
     overflow: hidden;
     align-content: center;
   }
+
   footer {
     background-color: black;
     color: #fff;
@@ -275,6 +280,7 @@ p {
     grid-template-columns: 1fr auto;
     grid-row: 3;
   }
+
   .social-media-icons {
     padding: 10px;
     margin-top: 20px;
@@ -291,14 +297,13 @@ p {
     color: #007bff; 
   }
 
-/* Estilos de contact.html */
 
+/* Estilos de contact.html */
 
 body .contactPage {
 	height: 100%; 
 	background-color: darkgray ;
 }
-
 
 .contact_form{	
 	width: 460px; 
@@ -310,7 +315,6 @@ body .contactPage {
   background-color: #fbfbfb; 
   padding-left: 30px; 
 }
-
 
 input{
 	background-color: #fbfbfb; 
@@ -324,7 +328,6 @@ input{
 	padding-left: 10px;
   margin-bottom: 20px; 
 }
-
 
 textarea{
   background-color: #fbfbfb; 
@@ -340,12 +343,10 @@ textarea{
   padding-top: 15px; 
 }
 
-
 label{
   display: block; 
 	float: center; 	
 }
-
 
 button{
 	height: 45px; 
@@ -362,22 +363,18 @@ button{
   cursor: pointer;
 }
 
-
 button p{
 	color: #fff; 
 }
-
 
 span{
 	color: darkgrey; 
 }
 
-
 .aviso{
 	font-size: 13px;  
 	color: #0e0e0e;  
 }
-
 
 h1 .contactLetter {
 	font-size: 39px;  
@@ -386,37 +383,136 @@ h1 .contactLetter {
 	color: black;
 }
 
-
 h3 .contactLetter {
 	font-size: 16px; 
 	padding-bottom: 30px;
 	color: #0e0e0e;   
 }
 
-
 p .contactLetter{
 	font-size: 14px; 
 	color: #0e0e0e; 
 }
 
-
 ::-webkit-input-placeholder {
  color: #a8a8a8;
 }
 
-
 ::-webkit-textarea-placeholder {
  color: #a8a8a8;
 }
-
 
 .formulario input:focus{
 	outline:0;
 	border: 2px solid blue;
 }
 
-
 .formulario textarea:focus{
 	outline:0;
 	border: 1px solid #97d848;
+}
+
+/* Estilos del Home */
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.homeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+.burgerMenu {
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+}
+
+.beerMenu {
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 170px;
+  height: 200px;
+}
+
+.shareMenu {
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: inline-block;
+  border-radius: 10px;
+  width: 130px;
+  height: 200px;
+}
+
+.cardsMenu {
+  background-color: gainsboro;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  align-content: center;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
