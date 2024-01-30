@@ -1,3 +1,5 @@
+//                                            CARRITO DE COMPRAS                                       //
+
 document.addEventListener('DOMContentLoaded', () => {
 	const btnCart = document.querySelector('.container-cart-icon');
 	const containerCartProducts = document.querySelector('.container-cart-products');
@@ -84,4 +86,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	  countProducts.innerText = totalOfProducts;
 	};
   });
-  
+
+  //                                      FORMULARIO DE CONTACTO                                         //

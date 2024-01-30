@@ -1,0 +1,15 @@
+{
+    "name": "the-code-bar",
+    "version": "1.0.0",
+    "description": "Bar temático",
+    "main": "main.js",
+    "scripts": {
+      "start": " ./style.css ./css/style.min.css -w --no-source-map -s compressed"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/itsPatH/JSPatriciaHerrera/tree/PreEntrega3"
+    },
+    "author": "Patricia Gabriela Herrera Duno",
+    "license": "ISC"
+    }

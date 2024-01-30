@@ -14,6 +14,7 @@ body{
     font-family: "Montserrat", sans-serif;
     font-family: "Roboto Mono", monospace;
     padding: 0;
+   
 }
 
 .icon-cart{
@@ -39,6 +40,48 @@ header{
     color: #fff;
     padding: 10px;
 }
+.link {
+    position: absolute;
+    padding: 20px 50px;
+  }
+  nav {
+    background: black;
+    height: 80px;
+    width: 100%;}
+    nav ul {
+        float: center;
+      margin-right: 20px;
+    }
+    nav li {
+        display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+
+    }
+    a {
+      color: #fff;
+      font-size: 18px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      }
+    a :active {
+        background: gainsboro;
+        transition: 0.5s;
+
+    }
+    a :hover {
+        background: gainsboro;
+        transition: 0.5s;
+
+    }
+  .mug {
+    color: white;
+}
+  .mug:visited {
+    color: white
+   }
+  
 
 .container-icon{
     position: relative;
@@ -136,6 +179,7 @@ header{
 
 .container-items{
     display: grid;
+    grid-row: 2;
     padding: 10px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -204,7 +248,175 @@ header{
 .hidden{
     display: none;
 }
-
-.mug {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+p {
+    text-align: center;
+}
+.iframe-container {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    align-content: center;
+  }
+  footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: larger;
+    grid-template-columns: 1fr auto;
+    grid-row: 3;
+  }
+  .social-media-icons {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .social-media-icons a {
+    margin-right: 15px;
     color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-media-icons a:hover {
+    color: #007bff; 
+  }
+
+/* Estilos de contact.html */
+
+
+body .contactPage {
+	height: 100%; 
+	background-color: darkgray ;
+}
+
+
+.contact_form{	
+	width: 460px; 
+  height: auto;
+  margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+  background-color: #fbfbfb; 
+  padding-left: 30px; 
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: black; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: white; 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: grey; 
+	border-color: black; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: darkgrey; 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+}
+
+
+h1 .contactLetter {
+	font-size: 39px;  
+	text-align: letf; 
+	padding-bottom: 20px; 
+	color: black;
+}
+
+
+h3 .contactLetter {
+	font-size: 16px; 
+	padding-bottom: 30px;
+	color: #0e0e0e;   
+}
+
+
+p .contactLetter{
+	font-size: 14px; 
+	color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 2px solid blue;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
 }
