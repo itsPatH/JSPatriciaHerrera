@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bar Temático para programadores The Code Bar"
+    />
+    <meta
+      name="keywords"
+      content="Bar temático, programación, restaurantes, bares"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../assets/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/cd62d706cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVGJ6pizcxO6jvuAGO-zVX8pUn38Dvakw"
+    ></script>
+    <title>The Code Bar</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        The Code Bar
+        <a class="mug" href="../index.html"
+          ><i class="fa-solid fa-beer-mug-empty"></i
+        ></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="../pages/home.html">Inicio</a></li>
+          <li><a href="../index.html">Comprar</a></li>
+          <li><a href="../pages/locations.html">Sucursales</a></li>
+          <li><a href="../pages/delivery.html">Delivery</a></li>
+          <li><a href="../pages/contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <h1>¡Pide acá!</h1>
+      </div>
+      <div class="menu-container">
+        <div class="cardsMenu">
+          <div>
+            <img
+              class="burgerMenu"
+              src="../assets/map.png"
+              alt="Buscar dirección"
+            />
+          </div>
+          <div class="container">
+            <h3>Busca tu dirección</h3>
+          </div>
+        </div>
+        <div class="cardsMenu">
+          <div>
+            <img
+              class="burgerMenu"
+              src="../assets/order.png"
+              alt="Ordenar pedido"
+            />
+          </div>
+          <div class="container">
+            <h3>Realiza tu pedido</h3>
+          </div>
+        </div>
+        <div class="cardsMenu">
+          <div>
+            <img
+              class="burgerMenu"
+              src="../assets/deliveryman.png"
+              alt="Esperar pedido"
+            />
+          </div>
+          <div class="container">
+            <h3>Disfruta tu pedido</h3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              id="search_location"
+              class="form-control"
+              placeholder="Buscador"
+            />
+            <div class="input-group-btn">
+              <button class="btn btn-default get_map" type="submit">
+                Buscar
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="geomap"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </div>
+      <p>©The Code Bar 2023</p>
+    </footer>
+    <script src="../delivery.js"></script>
+  </body>
+</html>
